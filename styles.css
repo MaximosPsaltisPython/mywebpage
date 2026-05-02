@@ -395,6 +395,38 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.apps-section {
+  background: #fff;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.app-card {
+  display: grid;
+  gap: 10px;
+  max-width: 430px;
+  min-height: 280px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(22, 115, 107, 0.08), rgba(182, 99, 50, 0.1)),
+    #fff;
+}
+
+.app-card p {
+  color: var(--muted);
+}
+
+.app-card .button {
+  justify-self: start;
+  align-self: end;
+}
+
 .contact-band {
   display: flex;
   align-items: center;
@@ -432,6 +464,10 @@ h3 {
   }
 
   .achievement-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .apps-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -500,6 +536,7 @@ h3 {
   .stat-row,
   .results-grid,
   .achievement-grid,
+  .apps-grid,
   .skills-list {
     grid-template-columns: 1fr;
   }
